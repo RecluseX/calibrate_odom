@@ -1,0 +1,7 @@
+<launch>
+    <node name="calibrate_odom_node" pkg="calibrate_odom" type="calibrate_odom_node" output="screen">
+        <rosparam file="$(find calibrate_odom)/config/calibrate_param.yaml" command="load"/>
+        <!--param name="odom_test_distance" value="3.0"/-->
+        <!--param name="odom_scale" value="1.0"/-->
+    </node>
+</launch>
